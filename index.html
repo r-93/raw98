@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>raw9.8</title>
+	<style>
+		body {
+			background-color: black;
+		}
+
+		.ascii-art {
+		  color: red;
+		  font-size: 14px;
+		  text-align: center;
+		  margin-top: 50px;
+		  margin-bottom: 50px;
+		  animation-name: flip;
+		  animation-duration: 10s;
+		  animation-timing-function: linear;
+		  animation-iteration-count: infinite;
+		  transform-style: preserve-3d;
+		}
+
+		@keyframes flip {
+			0% {
+				transform: perspective(800px) rotateY(0deg);
+			}
+			50% {
+				transform: perspective(800px) rotateY(180deg);
+			}
+			100% {
+				transform: perspective(800px) rotateY(360deg);
+			}
+		}
+
+		.link {
+			color: white;
+			font-size: 14px;
+			text-align: center;
+			margin-top: 50px;
+		}
+
+		.link a {
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<div class="ascii-art">
+		<pre>
+		 /$$$$$$$                                 /$$$$$$      /$$$$$$
+		| $$__  $$                               /$$__  $$    /$$__  $$
+		| $$  \ $$  /$$$$$$  /$$  /$$  /$$      | $$  \ $$   | $$  \ $$
+		| $$$$$$$/ |____  $$| $$ | $$ | $$      |  $$$$$$$   |  $$$$$$/
+		| $$__  $$  /$$$$$$$| $$ | $$ | $$       \____  $$    >$$__  $$
+		| $$  \ $$ /$$__  $$| $$ | $$ | $$       /$$  \ $$   | $$  \ $$
+		| $$  | $$|  $$$$$$$|  $$$$$/$$$$/      |  $$$$$$//$$|  $$$$$$/
+		|__/  |__/ \_______/ \_____/\___/        \______/|__/ \______/
+		</pre>
+	</div>
+	<div class="link">
+		<a href="solo.to/ponda">links</a>
+	</div>
+</body>
+</html>
